@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="Suite">
+  <test name="Android">
+    <listeners>
+      <listener class-name="com.qa.listeners.TestListener"/>
+    </listeners>
+    <parameter name="emulator" value="false"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="udid" value ="2555a46e"/>
+    <parameter name="deviceName" value="OnePlus"/>
+    <parameter name="systemPort" value="10000"/>
+    <parameter name="chromeDriverPort" value="11000"/>
+    <classes>
+<!--  <class name="com.qa.tests.LoginTests"/>-->
+      <class name="com.qa.tests.ProductTests"/>
+      <methods>
+        <include name = "validateProductOnProductsPage"/>
+      </methods>
+    </classes>
+  </test>-->
+</suite> <!-- Suite -->

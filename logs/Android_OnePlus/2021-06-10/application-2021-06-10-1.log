@@ -1,0 +1,35 @@
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:06.824 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:06.837 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:18.055 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:18.301 LoginTests:52 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:19.643 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:21.018 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:22.569 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:24.865 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:24.867 LoginTests:78 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:24.874 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:26.536 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:26.537 LoginTests:52 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:26.690 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:28.620 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:29.421 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:30.991 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:30.992 LoginTests:66 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:30.995 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:32.704 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:32.706 LoginTests:52 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:32.889 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:35.397 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:36.145 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:38.433 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:38.434 LoginTests:90 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-10 22:50:38.436 LoginTests:56 - loginTest after method

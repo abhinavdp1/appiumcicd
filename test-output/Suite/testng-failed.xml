@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Android(failed)" parallel="tests">
+    <parameter name="emulator" value="false"/>
+    <parameter name="chromeDriverPort" value="11000"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="udid" value="2555a46e"/>
+    <parameter name="deviceName" value="OnePlus"/>
+    <parameter name="systemPort" value="10000"/>
+    <classes>
+      <class name="com.qa.tests.ProductTests">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="validateProductOnProductsPage"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.qa.tests.ProductTests -->
+    </classes>
+  </test> <!-- Android(failed) -->
+</suite> <!-- Failed suite [Suite] -->

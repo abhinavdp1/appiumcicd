@@ -1,0 +1,33 @@
+15:iOS:iPhone 8:com.qa.tests.LoginTests:loginTest before method
+15:iOS:iPhone 8:com.qa.tests.LoginTests:
+****** starting test: invalidPassword******
+
+15:iOS:iPhone 8:com.qa.pages.LoginPage:Login with standard_user
+15:iOS:iPhone 8:com.qa.pages.LoginPage:password is invalidpassword
+15:iOS:iPhone 8:com.qa.pages.LoginPage:Press login button
+15:iOS:iPhone 8:com.qa.pages.LoginPage:error text is - Username and password do not match any user in this service.
+15:iOS:iPhone 8:com.qa.tests.LoginTests:actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+15:iOS:iPhone 8:com.qa.tests.LoginTests:loginTest after method
+15:iOS:iPhone 8:com.qa.tests.LoginTests:loginTest before method
+15:iOS:iPhone 8:com.qa.tests.LoginTests:
+****** starting test: invalidUserName******
+
+15:iOS:iPhone 8:com.qa.pages.LoginPage:Login with invalidusername
+15:iOS:iPhone 8:com.qa.pages.LoginPage:password is secret_sauce
+15:iOS:iPhone 8:com.qa.pages.LoginPage:Press login button
+15:iOS:iPhone 8:com.qa.pages.LoginPage:error text is - Username and password do not match any user in this service.
+15:iOS:iPhone 8:com.qa.tests.LoginTests:actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+15:iOS:iPhone 8:com.qa.tests.LoginTests:loginTest after method
+15:iOS:iPhone 8:com.qa.tests.LoginTests:loginTest before method
+15:iOS:iPhone 8:com.qa.tests.LoginTests:
+****** starting test: successfulLogin******
+
+15:iOS:iPhone 8:com.qa.pages.LoginPage:Login with standard_user
+15:iOS:iPhone 8:com.qa.pages.LoginPage:password is secret_sauce
+15:iOS:iPhone 8:com.qa.pages.LoginPage:Press login button
+15:iOS:iPhone 8:com.qa.pages.ProductsPage:product page title is: PRODUCTS
+15:iOS:iPhone 8:com.qa.tests.LoginTests:actual product title - PRODUCTS
+expected product title - PRODUCTS
+15:iOS:iPhone 8:com.qa.tests.LoginTests:loginTest after method

@@ -1,0 +1,300 @@
+2021-06-12 17:52:28:653 [Appium] Welcome to Appium v1.20.2
+2021-06-12 17:52:28:654 [Appium] Non-default server args:
+2021-06-12 17:52:28:654 [Appium]   sessionOverride: true
+2021-06-12 17:52:28:655 [Appium]   logFile: /Users/abhinav/eclipse-workspace/TDDFramework/ServerLogs/server.log
+2021-06-12 17:52:28:683 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2021-06-12 17:52:29:011 [HTTP] --> GET /wd/hub/status
+2021-06-12 17:52:29:012 [HTTP] {}
+2021-06-12 17:52:29:013 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-06-12 17:52:29:015 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.20.2"}}
+2021-06-12 17:52:29:024 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-06-12 17:52:29:024 [HTTP] 
+2021-06-12 17:52:30:989 [HTTP] --> POST /wd/hub/session
+2021-06-12 17:52:30:990 [HTTP] {"desiredCapabilities":{"appActivity":"com.swaglabsmobileapp.SplashActivity","appPackage":"com.swaglabsmobileapp","automationName":"UiAutomator2","platformName":"Android","udid":"2555a46e","deviceName":"OnePlus"},"capabilities":{"firstMatch":[{"appium:appActivity":"com.swaglabsmobileapp.SplashActivity","appium:appPackage":"com.swaglabsmobileapp","appium:automationName":"UiAutomator2","appium:deviceName":"OnePlus","platformName":"android","appium:udid":"2555a46e"}]}}
+2021-06-12 17:52:30:991 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":"com.swaglabsmobileapp.SplashActivity","appPackage":"com.swaglabsmobileapp","automationName":"UiAutomator2","platformName":"Android","udid":"2555a46e","deviceName":"OnePlus"},null,{"firstMatch":[{"appium:appActivity":"com.swaglabsmobileapp.SplashActivity","appium:appPackage":"com.swaglabsmobileapp","appium:automationName":"UiAutomator2","appium:deviceName":"OnePlus","platformName":"android","appium:udid":"2555a46e"}]}]
+2021-06-12 17:52:30:991 [BaseDriver] Event 'newSessionRequested' logged at 1623520350991 (23:22:30 GMT+0530 (India Standard Time))
+2021-06-12 17:52:31:964 [Appium] Appium v1.20.2 creating new AndroidUiautomator2Driver (v1.61.2) session
+2021-06-12 17:52:31:964 [Appium] There are no active sessions for cleanup
+2021-06-12 17:52:31:969 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2021-06-12 17:52:31:969 [BaseDriver] Creating session with W3C capabilities: {
+2021-06-12 17:52:31:969 [BaseDriver]   "alwaysMatch": {
+2021-06-12 17:52:31:969 [BaseDriver]     "platformName": "android",
+2021-06-12 17:52:31:969 [BaseDriver]     "appium:appActivity": "com.swaglabsmobileapp.SplashActivity",
+2021-06-12 17:52:31:970 [BaseDriver]     "appium:appPackage": "com.swaglabsmobileapp",
+2021-06-12 17:52:31:970 [BaseDriver]     "appium:automationName": "UiAutomator2",
+2021-06-12 17:52:31:970 [BaseDriver]     "appium:deviceName": "OnePlus",
+2021-06-12 17:52:31:970 [BaseDriver]     "appium:udid": "2555a46e"
+2021-06-12 17:52:31:970 [BaseDriver]   },
+2021-06-12 17:52:31:970 [BaseDriver]   "firstMatch": [
+2021-06-12 17:52:31:970 [BaseDriver]     {}
+2021-06-12 17:52:31:970 [BaseDriver]   ]
+2021-06-12 17:52:31:971 [BaseDriver] }
+2021-06-12 17:52:31:980 [BaseDriver] Session created with session id: 5579dbbb-150b-4532-8f02-10fcf69a9fd4
+2021-06-12 17:52:31:980 [UiAutomator2] Starting 'com.swaglabsmobileapp' directly on the device
+2021-06-12 17:52:32:008 [ADB] Found 2 'build-tools' folders under '/Users/abhinav/Library/Android/sdk' (newest first):
+2021-06-12 17:52:32:008 [ADB]     /Users/abhinav/Library/Android/sdk/build-tools/31.0.0-rc3
+2021-06-12 17:52:32:009 [ADB]     /Users/abhinav/Library/Android/sdk/build-tools/30.0.3
+2021-06-12 17:52:32:009 [ADB] Using 'adb' from '/Users/abhinav/Library/Android/sdk/platform-tools/adb'
+2021-06-12 17:52:32:010 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2021-06-12 17:52:32:042 [AndroidDriver] Retrieving device list
+2021-06-12 17:52:32:043 [ADB] Trying to find a connected android device
+2021-06-12 17:52:32:043 [ADB] Getting connected devices
+2021-06-12 17:52:32:056 [ADB] Connected devices: [{"udid":"2555a46e","state":"device"}]
+2021-06-12 17:52:32:057 [AndroidDriver] Using device: 2555a46e
+2021-06-12 17:52:32:059 [ADB] Using 'adb' from '/Users/abhinav/Library/Android/sdk/platform-tools/adb'
+2021-06-12 17:52:32:059 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2021-06-12 17:52:32:079 [ADB] Setting device id to 2555a46e
+2021-06-12 17:52:32:080 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell getprop ro.build.version.sdk'
+2021-06-12 17:52:32:141 [ADB] Current device property 'ro.build.version.sdk': 29
+2021-06-12 17:52:32:141 [ADB] Getting device platform version
+2021-06-12 17:52:32:142 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell getprop ro.build.version.release'
+2021-06-12 17:52:32:189 [ADB] Current device property 'ro.build.version.release': 10
+2021-06-12 17:52:32:190 [ADB] Device API level: 29
+2021-06-12 17:52:32:190 [UiAutomator2] Relaxing hidden api policy
+2021-06-12 17:52:32:191 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2021-06-12 17:52:32:391 [AndroidDriver] No app sent in, not parsing package/activity
+2021-06-12 17:52:32:392 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e wait-for-device'
+2021-06-12 17:52:32:404 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell echo ping'
+2021-06-12 17:52:32:440 [AndroidDriver] Pushing settings apk to device...
+2021-06-12 17:52:32:442 [ADB] Getting install status for io.appium.settings
+2021-06-12 17:52:32:443 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell dumpsys package io.appium.settings'
+2021-06-12 17:52:32:525 [ADB] 'io.appium.settings' is installed
+2021-06-12 17:52:32:526 [ADB] Getting package info for 'io.appium.settings'
+2021-06-12 17:52:32:527 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell dumpsys package io.appium.settings'
+2021-06-12 17:52:32:630 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('3.2.1' >= '3.2.1')
+2021-06-12 17:52:32:630 [ADB] There is no need to install/upgrade '/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2021-06-12 17:52:32:631 [ADB] Getting IDs of all 'io.appium.settings' processes
+2021-06-12 17:52:32:631 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell 'pgrep --help; echo $?''
+2021-06-12 17:52:32:691 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2021-06-12 17:52:32:808 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2021-06-12 17:52:32:809 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell appops set io.appium.settings android:mock_location allow'
+2021-06-12 17:52:32:903 [Logcat] Starting logs capture with command: /Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e logcat -v threadtime
+2021-06-12 17:52:32:961 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to local port 8203
+2021-06-12 17:52:32:962 [ADB] Forwarding system: 8203 to device: 6790
+2021-06-12 17:52:32:962 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e forward tcp:8203 tcp:6790'
+2021-06-12 17:52:32:978 [ADB] Getting install status for io.appium.uiautomator2.server
+2021-06-12 17:52:32:979 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell dumpsys package io.appium.uiautomator2.server'
+2021-06-12 17:52:33:038 [ADB] 'io.appium.uiautomator2.server' is installed
+2021-06-12 17:52:33:039 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2021-06-12 17:52:33:039 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell dumpsys package io.appium.uiautomator2.server'
+2021-06-12 17:52:33:122 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('4.17.4' >= '4.17.4')
+2021-06-12 17:52:33:123 [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2021-06-12 17:52:33:124 [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.17.4.apk
+2021-06-12 17:52:33:139 [ADB] Using 'apksigner.jar' from '/Users/abhinav/Library/Android/sdk/build-tools/31.0.0-rc3/lib/apksigner.jar'
+2021-06-12 17:52:33:140 [ADB] Starting apksigner: /Library/Java/JavaVirtualMachines/jdk-16.jdk/Contents/Home/bin/java -Xmx1024M -Xss1m -jar /Users/abhinav/Library/Android/sdk/build-tools/31.0.0-rc3/lib/apksigner.jar verify --print-certs /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.17.4.apk
+2021-06-12 17:52:34:527 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2021-06-12 17:52:34:527 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2021-06-12 17:52:34:527 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2021-06-12 17:52:34:528 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2021-06-12 17:52:34:528 [ADB] 
+2021-06-12 17:52:34:528 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v4.17.4.apk'
+2021-06-12 17:52:34:528 [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.17.4.apk' is signed with the default certificate
+2021-06-12 17:52:34:529 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2021-06-12 17:52:34:529 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell dumpsys package io.appium.uiautomator2.server.test'
+2021-06-12 17:52:34:623 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2021-06-12 17:52:34:624 [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2021-06-12 17:52:34:625 [ADB] Starting apksigner: /Library/Java/JavaVirtualMachines/jdk-16.jdk/Contents/Home/bin/java -Xmx1024M -Xss1m -jar /Users/abhinav/Library/Android/sdk/build-tools/31.0.0-rc3/lib/apksigner.jar verify --print-certs /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2021-06-12 17:52:35:107 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2021-06-12 17:52:35:108 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2021-06-12 17:52:35:108 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2021-06-12 17:52:35:108 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2021-06-12 17:52:35:108 [ADB] 
+2021-06-12 17:52:35:108 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2021-06-12 17:52:35:109 [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2021-06-12 17:52:35:109 [UiAutomator2] Server packages are not going to be (re)installed
+2021-06-12 17:52:35:111 [UiAutomator2] Waiting up to 30000ms for services to be available
+2021-06-12 17:52:35:112 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell pm list instrumentation'
+2021-06-12 17:52:35:197 [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2021-06-12 17:52:35:202 [ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2021-06-12 17:52:35:202 [ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2021-06-12 17:52:35:202 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2021-06-12 17:52:35:336 [UiAutomator2] No app capability. Assuming it is already on the device
+2021-06-12 17:52:35:337 [ADB] Getting install status for com.swaglabsmobileapp
+2021-06-12 17:52:35:338 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell dumpsys package com.swaglabsmobileapp'
+2021-06-12 17:52:35:432 [ADB] 'com.swaglabsmobileapp' is installed
+2021-06-12 17:52:35:433 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell am force-stop com.swaglabsmobileapp'
+2021-06-12 17:52:35:529 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell pm clear com.swaglabsmobileapp'
+2021-06-12 17:52:35:631 [AndroidDriver] Performed fast reset on the installed 'com.swaglabsmobileapp' application (stop and clear)
+2021-06-12 17:52:35:632 [UiAutomator2] Performing shallow cleanup of automation leftovers
+2021-06-12 17:52:35:653 [UiAutomator2] No obsolete sessions have been detected (socket hang up)
+2021-06-12 17:52:35:653 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell am force-stop io.appium.uiautomator2.server.test'
+2021-06-12 17:52:35:708 [UiAutomator2] Starting UIAutomator2 server 4.17.4
+2021-06-12 17:52:35:709 [UiAutomator2] Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.17.4.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2021-06-12 17:52:35:709 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
+2021-06-12 17:52:35:710 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","2555a46e","shell","am","instrument","-w","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2021-06-12 17:52:35:721 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-06-12 17:52:35:724 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8203/wd/hub/status] with no body
+2021-06-12 17:52:35:739 [WD Proxy] socket hang up
+2021-06-12 17:52:36:741 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-06-12 17:52:36:741 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8203/wd/hub/status] with no body
+2021-06-12 17:52:36:747 [WD Proxy] socket hang up
+2021-06-12 17:52:36:756 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2021-06-12 17:52:37:749 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-06-12 17:52:37:750 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8203/wd/hub/status] with no body
+2021-06-12 17:52:37:768 [WD Proxy] socket hang up
+2021-06-12 17:52:38:773 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-06-12 17:52:38:774 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8203/wd/hub/status] with no body
+2021-06-12 17:52:38:893 [WD Proxy] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2021-06-12 17:52:38:894 [UiAutomator2] The initialization of the instrumentation process took 3184ms
+2021-06-12 17:52:38:894 [WD Proxy] Matched '/session' to command name 'createSession'
+2021-06-12 17:52:38:895 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8203/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":"com.swaglabsmobileapp.SplashActivity","appPackage":"com.swaglabsmobileapp","automationName":"UiAutomator2","deviceName":"OnePlus","udid":"2555a46e"},"platformName":"android","appActivity":"com.swaglabsmobileapp.SplashActivity","appPackage":"com.swaglabsmobileapp","automationName":"UiAutomator2","deviceName":"2555a46e","udid":"2555a46e","deviceUDID":"2555a46e"}],"alwaysMatch":{}}}
+2021-06-12 17:52:38:926 [WD Proxy] Got response with status 200: {"sessionId":"45ed9d1f-e01d-4f81-944a-30b1bc4fccf9","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":"com.swaglabsmobileapp.SplashActivity","appPackage":"com.swaglabsmobileapp","automationName":"UiAutomator2","deviceName":"OnePlus","udid":"2555a46e"},"platformName":"android","appActivity":"com.swaglabsmobileapp.SplashActivity","appPackage":"com.swaglabsmobileapp","automationName":"UiAutomator2","deviceName":"2555a46e","udid":"2555a46e","deviceUDID":"2555a46e"}],"alwaysMatch":{}},"sessionId":"45ed9d1f-e01d-4f81-944a-30b1bc4fccf9"}}
+2021-06-12 17:52:38:927 [WD Proxy] Determined the downstream protocol as 'W3C'
+2021-06-12 17:52:38:941 [WD Proxy] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8203/wd/hub/session/45ed9d1f-e01d-4f81-944a-30b1bc4fccf9/appium/device/info] with no body
+2021-06-12 17:52:38:983 [WD Proxy] Got response with status 200: {"sessionId":"45ed9d1f-e01d-4f81-944a-30b1bc4fccf9","value":{"androidId":"ae7988d505faf85d","apiVersion":"29","bluetooth":{"state":"OFF"},"brand":"OnePlus","carrierName":"","displayDensity":420,"locale":"en_US","manufacturer":"OnePlus","model":"ONEPLUS A5010","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":1048576,"linkUpstreamBandwidthKbps":1048576,"networkCapabilities":"NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-53,"transportTypes":"TRANSPORT_WIFI"},"detailedState":"CONNECTED","extraInfo":null,"isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":0,"subtypeName":"","type":1,"typeName":"WIFI"}],"platformVersion":"10","realDisplaySize":"1080x2160","timeZone":"Asia/Kolkata"}}
+2021-06-12 17:52:38:989 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell dumpsys window'
+2021-06-12 17:52:39:113 [AndroidDriver] Screen already unlocked, doing nothing
+2021-06-12 17:52:39:114 [UiAutomator2] Starting 'com.swaglabsmobileapp/com.swaglabsmobileapp.SplashActivity and waiting for 'com.swaglabsmobileapp/com.swaglabsmobileapp.SplashActivity'
+2021-06-12 17:52:39:115 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell am start -W -n com.swaglabsmobileapp/com.swaglabsmobileapp.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2021-06-12 17:52:39:912 [WD Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8203/wd/hub/session/45ed9d1f-e01d-4f81-944a-30b1bc4fccf9/appium/device/pixel_ratio] with no body
+2021-06-12 17:52:39:922 [WD Proxy] Got response with status 200: {"sessionId":"45ed9d1f-e01d-4f81-944a-30b1bc4fccf9","value":2.625}
+2021-06-12 17:52:39:926 [WD Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2021-06-12 17:52:39:926 [WD Proxy] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8203/wd/hub/session/45ed9d1f-e01d-4f81-944a-30b1bc4fccf9/appium/device/system_bars] with no body
+2021-06-12 17:52:39:933 [WD Proxy] Got response with status 200: {"sessionId":"45ed9d1f-e01d-4f81-944a-30b1bc4fccf9","value":{"statusBar":63}}
+2021-06-12 17:52:39:935 [WD Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2021-06-12 17:52:39:935 [WD Proxy] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8203/wd/hub/session/45ed9d1f-e01d-4f81-944a-30b1bc4fccf9/window/current/size] with no body
+2021-06-12 17:52:39:944 [WD Proxy] Got response with status 200: {"sessionId":"45ed9d1f-e01d-4f81-944a-30b1bc4fccf9","value":{"height":2160,"width":1080}}
+2021-06-12 17:52:39:946 [Appium] New AndroidUiautomator2Driver session created successfully, session 5579dbbb-150b-4532-8f02-10fcf69a9fd4 added to master session list
+2021-06-12 17:52:39:947 [BaseDriver] Event 'newSessionStarted' logged at 1623520359946 (23:22:39 GMT+0530 (India Standard Time))
+2021-06-12 17:52:39:948 [W3C (5579dbbb)] Cached the protocol value 'W3C' for the new session 5579dbbb-150b-4532-8f02-10fcf69a9fd4
+2021-06-12 17:52:39:948 [W3C (5579dbbb)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":"com.swaglabsmobileapp.SplashActivity","appPackage":"com.swaglabsmobileapp","automationName":"UiAutomator2","deviceName":"OnePlus","udid":"2555a46e"},"platformName":"android","appActivity":"com.swaglabsmobileapp.SplashActivity","appPackage":"com.swaglabsmobileapp","automationName":"UiAutomator2","deviceName":"2555a46e","udid":"2555a46e","deviceUDID":"2555a46e","deviceApiLevel":29,"platformVersion":"10","deviceScreenSize":"1080x2160","deviceScreenDensity":420,"deviceModel":"ONEPLUS A5010","deviceManufacturer":"OnePlus","pixelRatio":2.625,"statBarHeight":63,"viewportRect":{"left":0,"top":63,"width":1080,"height":2097}}}
+2021-06-12 17:52:39:950 [HTTP] <-- POST /wd/hub/session 200 8960 ms - 947
+2021-06-12 17:52:39:950 [HTTP] 
+2021-06-12 17:52:40:063 [HTTP] --> POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/appium/app/close
+2021-06-12 17:52:40:063 [HTTP] {}
+2021-06-12 17:52:40:070 [W3C (5579dbbb)] Calling AppiumDriver.closeApp() with args: ["5579dbbb-150b-4532-8f02-10fcf69a9fd4"]
+2021-06-12 17:52:40:071 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell am force-stop com.swaglabsmobileapp'
+2021-06-12 17:52:40:151 [W3C (5579dbbb)] Responding to client with driver.closeApp() result: null
+2021-06-12 17:52:40:152 [HTTP] <-- POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/appium/app/close 200 89 ms - 14
+2021-06-12 17:52:40:152 [HTTP] 
+2021-06-12 17:52:40:163 [HTTP] --> POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/appium/app/launch
+2021-06-12 17:52:40:163 [HTTP] {}
+2021-06-12 17:52:40:174 [W3C (5579dbbb)] Calling AppiumDriver.launchApp() with args: ["5579dbbb-150b-4532-8f02-10fcf69a9fd4"]
+2021-06-12 17:52:40:175 [UiAutomator2] No app capability. Assuming it is already on the device
+2021-06-12 17:52:40:175 [ADB] Getting install status for com.swaglabsmobileapp
+2021-06-12 17:52:40:175 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell dumpsys package com.swaglabsmobileapp'
+2021-06-12 17:52:40:231 [ADB] 'com.swaglabsmobileapp' is installed
+2021-06-12 17:52:40:231 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell am force-stop com.swaglabsmobileapp'
+2021-06-12 17:52:40:277 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell pm clear com.swaglabsmobileapp'
+2021-06-12 17:52:40:330 [AndroidDriver] Performed fast reset on the installed 'com.swaglabsmobileapp' application (stop and clear)
+2021-06-12 17:52:40:332 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell am start -W -n com.swaglabsmobileapp/com.swaglabsmobileapp.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2021-06-12 17:52:41:097 [W3C (5579dbbb)] Responding to client with driver.launchApp() result: null
+2021-06-12 17:52:41:098 [HTTP] <-- POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/appium/app/launch 200 935 ms - 14
+2021-06-12 17:52:41:098 [HTTP] 
+2021-06-12 17:52:41:130 [HTTP] --> POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/appium/start_recording_screen
+2021-06-12 17:52:41:130 [HTTP] {}
+2021-06-12 17:52:41:131 [W3C (5579dbbb)] Calling AppiumDriver.startRecordingScreen() with args: [null,"5579dbbb-150b-4532-8f02-10fcf69a9fd4"]
+2021-06-12 17:52:41:132 [ADB] Getting IDs of all 'screenrecord' processes
+2021-06-12 17:52:41:133 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2021-06-12 17:52:41:217 [AndroidDriver] Screen recording has not been previously started by Appium. There is nothing to stop
+2021-06-12 17:52:41:218 [ADB] Getting IDs of all 'screenrecord' processes
+2021-06-12 17:52:41:218 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)'
+2021-06-12 17:52:41:278 [ADB] Building screenrecord process with the command line: adb -P 5037 -s 2555a46e shell screenrecord --time-limit 180 /sdcard/98971e20.mp4
+2021-06-12 17:52:41:294 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell "[ -e '/sdcard/98971e20.mp4' ] && echo __PASS__"'
+2021-06-12 17:52:41:623 [ADB] Running '/Users/abhinav/Library/Android/sdk/platform-tools/adb -P 5037 -s 2555a46e shell "[ -e '/sdcard/98971e20.mp4' ] && echo __PASS__"'
+2021-06-12 17:52:41:646 [W3C (5579dbbb)] Responding to client with driver.startRecordingScreen() result: ""
+2021-06-12 17:52:41:648 [HTTP] <-- POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/appium/start_recording_screen 200 517 ms - 12
+2021-06-12 17:52:41:648 [HTTP] 
+2021-06-12 17:52:41:916 [HTTP] --> GET /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/context
+2021-06-12 17:52:41:916 [HTTP] {}
+2021-06-12 17:52:41:918 [W3C (5579dbbb)] Calling AppiumDriver.getCurrentContext() with args: ["5579dbbb-150b-4532-8f02-10fcf69a9fd4"]
+2021-06-12 17:52:41:919 [W3C (5579dbbb)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2021-06-12 17:52:41:920 [HTTP] <-- GET /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/context 200 3 ms - 22
+2021-06-12 17:52:41:920 [HTTP] 
+2021-06-12 17:52:41:929 [HTTP] --> POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/element
+2021-06-12 17:52:41:930 [HTTP] {"using":"accessibility id","value":"test-Username"}
+2021-06-12 17:52:41:931 [W3C (5579dbbb)] Calling AppiumDriver.findElement() with args: ["accessibility id","test-Username","5579dbbb-150b-4532-8f02-10fcf69a9fd4"]
+2021-06-12 17:52:41:931 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2021-06-12 17:52:41:932 [BaseDriver] Waiting up to 0 ms for condition
+2021-06-12 17:52:41:933 [WD Proxy] Matched '/element' to command name 'findElement'
+2021-06-12 17:52:41:933 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8203/wd/hub/session/45ed9d1f-e01d-4f81-944a-30b1bc4fccf9/element] with body: {"strategy":"accessibility id","selector":"test-Username","context":"","multiple":false}
+2021-06-12 17:52:42:445 [WD Proxy] Got response with status 200: {"sessionId":"45ed9d1f-e01d-4f81-944a-30b1bc4fccf9","value":{"ELEMENT":"23fbdfc2-f8e7-4b3a-a797-c1cd769d3fce","element-6066-11e4-a52e-4f735466cecf":"23fbdfc2-f8e7-4b3a-a797-c1cd769d3fce"}}
+2021-06-12 17:52:42:446 [W3C (5579dbbb)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"23fbdfc2-f8e7-4b3a-a797-c1cd769d3fce","ELEMENT":"23fbdfc2-f8e7-4b3a-a797-c1cd769d3fce"}
+2021-06-12 17:52:42:447 [HTTP] <-- POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/element 200 517 ms - 137
+2021-06-12 17:52:42:447 [HTTP] 
+2021-06-12 17:52:42:452 [HTTP] --> GET /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/element/23fbdfc2-f8e7-4b3a-a797-c1cd769d3fce/displayed
+2021-06-12 17:52:42:452 [HTTP] {}
+2021-06-12 17:52:42:453 [W3C (5579dbbb)] Calling AppiumDriver.elementDisplayed() with args: ["23fbdfc2-f8e7-4b3a-a797-c1cd769d3fce","5579dbbb-150b-4532-8f02-10fcf69a9fd4"]
+2021-06-12 17:52:42:454 [WD Proxy] Matched '/element/23fbdfc2-f8e7-4b3a-a797-c1cd769d3fce/attribute/displayed' to command name 'getAttribute'
+2021-06-12 17:52:42:454 [WD Proxy] Proxying [GET /element/23fbdfc2-f8e7-4b3a-a797-c1cd769d3fce/attribute/displayed] to [GET http://127.0.0.1:8203/wd/hub/session/45ed9d1f-e01d-4f81-944a-30b1bc4fccf9/element/23fbdfc2-f8e7-4b3a-a797-c1cd769d3fce/attribute/displayed] with no body
+2021-06-12 17:52:42:464 [WD Proxy] Got response with status 200: {"sessionId":"45ed9d1f-e01d-4f81-944a-30b1bc4fccf9","value":"true"}
+2021-06-12 17:52:42:465 [W3C (5579dbbb)] Responding to client with driver.elementDisplayed() result: true
+2021-06-12 17:52:42:466 [HTTP] <-- GET /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/element/23fbdfc2-f8e7-4b3a-a797-c1cd769d3fce/displayed 200 14 ms - 14
+2021-06-12 17:52:42:466 [HTTP] 
+2021-06-12 17:52:42:469 [HTTP] --> GET /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/context
+2021-06-12 17:52:42:469 [HTTP] {}
+2021-06-12 17:52:42:470 [W3C (5579dbbb)] Calling AppiumDriver.getCurrentContext() with args: ["5579dbbb-150b-4532-8f02-10fcf69a9fd4"]
+2021-06-12 17:52:42:470 [W3C (5579dbbb)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2021-06-12 17:52:42:471 [HTTP] <-- GET /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/context 200 2 ms - 22
+2021-06-12 17:52:42:471 [HTTP] 
+2021-06-12 17:52:42:476 [HTTP] --> POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/element
+2021-06-12 17:52:42:476 [HTTP] {"using":"accessibility id","value":"test-Username"}
+2021-06-12 17:52:42:477 [W3C (5579dbbb)] Calling AppiumDriver.findElement() with args: ["accessibility id","test-Username","5579dbbb-150b-4532-8f02-10fcf69a9fd4"]
+2021-06-12 17:52:42:477 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2021-06-12 17:52:42:477 [BaseDriver] Waiting up to 0 ms for condition
+2021-06-12 17:52:42:478 [WD Proxy] Matched '/element' to command name 'findElement'
+2021-06-12 17:52:42:478 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8203/wd/hub/session/45ed9d1f-e01d-4f81-944a-30b1bc4fccf9/element] with body: {"strategy":"accessibility id","selector":"test-Username","context":"","multiple":false}
+2021-06-12 17:52:42:502 [WD Proxy] Got response with status 200: {"sessionId":"45ed9d1f-e01d-4f81-944a-30b1bc4fccf9","value":{"ELEMENT":"5c488769-9923-4f63-8a19-9c671a6a3dda","element-6066-11e4-a52e-4f735466cecf":"5c488769-9923-4f63-8a19-9c671a6a3dda"}}
+2021-06-12 17:52:42:504 [W3C (5579dbbb)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"5c488769-9923-4f63-8a19-9c671a6a3dda","ELEMENT":"5c488769-9923-4f63-8a19-9c671a6a3dda"}
+2021-06-12 17:52:42:505 [HTTP] <-- POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/element 200 28 ms - 137
+2021-06-12 17:52:42:505 [HTTP] 
+2021-06-12 17:52:42:510 [HTTP] --> POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/element/5c488769-9923-4f63-8a19-9c671a6a3dda/clear
+2021-06-12 17:52:42:510 [HTTP] {"id":"5c488769-9923-4f63-8a19-9c671a6a3dda"}
+2021-06-12 17:52:42:511 [W3C (5579dbbb)] Calling AppiumDriver.clear() with args: ["5c488769-9923-4f63-8a19-9c671a6a3dda","5579dbbb-150b-4532-8f02-10fcf69a9fd4"]
+2021-06-12 17:52:42:511 [WD Proxy] Matched '/element/5c488769-9923-4f63-8a19-9c671a6a3dda/clear' to command name 'clear'
+2021-06-12 17:52:42:512 [WD Proxy] Proxying [POST /element/5c488769-9923-4f63-8a19-9c671a6a3dda/clear] to [POST http://127.0.0.1:8203/wd/hub/session/45ed9d1f-e01d-4f81-944a-30b1bc4fccf9/element/5c488769-9923-4f63-8a19-9c671a6a3dda/clear] with body: {"elementId":"5c488769-9923-4f63-8a19-9c671a6a3dda"}
+2021-06-12 17:52:42:524 [WD Proxy] Got response with status 200: {"sessionId":"45ed9d1f-e01d-4f81-944a-30b1bc4fccf9","value":null}
+2021-06-12 17:52:42:524 [W3C (5579dbbb)] Responding to client with driver.clear() result: null
+2021-06-12 17:52:42:525 [HTTP] <-- POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/element/5c488769-9923-4f63-8a19-9c671a6a3dda/clear 200 15 ms - 14
+2021-06-12 17:52:42:525 [HTTP] 
+2021-06-12 17:52:42:529 [HTTP] --> GET /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/context
+2021-06-12 17:52:42:529 [HTTP] {}
+2021-06-12 17:52:42:533 [W3C (5579dbbb)] Calling AppiumDriver.getCurrentContext() with args: ["5579dbbb-150b-4532-8f02-10fcf69a9fd4"]
+2021-06-12 17:52:42:533 [W3C (5579dbbb)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2021-06-12 17:52:42:535 [HTTP] <-- GET /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/context 200 5 ms - 22
+2021-06-12 17:52:42:535 [HTTP] 
+2021-06-12 17:52:42:548 [HTTP] --> POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/element
+2021-06-12 17:52:42:548 [HTTP] {"using":"accessibility id","value":"test-Username"}
+2021-06-12 17:52:42:548 [W3C (5579dbbb)] Calling AppiumDriver.findElement() with args: ["accessibility id","test-Username","5579dbbb-150b-4532-8f02-10fcf69a9fd4"]
+2021-06-12 17:52:42:549 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2021-06-12 17:52:42:549 [BaseDriver] Waiting up to 0 ms for condition
+2021-06-12 17:52:42:549 [WD Proxy] Matched '/element' to command name 'findElement'
+2021-06-12 17:52:42:549 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8203/wd/hub/session/45ed9d1f-e01d-4f81-944a-30b1bc4fccf9/element] with body: {"strategy":"accessibility id","selector":"test-Username","context":"","multiple":false}
+2021-06-12 17:52:43:563 [WD Proxy] Got response with status 200: {"sessionId":"45ed9d1f-e01d-4f81-944a-30b1bc4fccf9","value":{"ELEMENT":"bc6ecaad-cad2-4fae-bfda-351255e2b1da","element-6066-11e4-a52e-4f735466cecf":"bc6ecaad-cad2-4fae-bfda-351255e2b1da"}}
+2021-06-12 17:52:43:563 [W3C (5579dbbb)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"bc6ecaad-cad2-4fae-bfda-351255e2b1da","ELEMENT":"bc6ecaad-cad2-4fae-bfda-351255e2b1da"}
+2021-06-12 17:52:43:564 [HTTP] <-- POST /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/element 200 1016 ms - 137
+2021-06-12 17:52:43:564 [HTTP] 
+2021-06-12 17:52:43:567 [HTTP] --> GET /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/element/bc6ecaad-cad2-4fae-bfda-351255e2b1da/displayed
+2021-06-12 17:52:43:567 [HTTP] {}
+2021-06-12 17:52:43:570 [W3C (5579dbbb)] Calling AppiumDriver.elementDisplayed() with args: ["bc6ecaad-cad2-4fae-bfda-351255e2b1da","5579dbbb-150b-4532-8f02-10fcf69a9fd4"]
+2021-06-12 17:52:43:571 [WD Proxy] Matched '/element/bc6ecaad-cad2-4fae-bfda-351255e2b1da/attribute/displayed' to command name 'getAttribute'
+2021-06-12 17:52:43:571 [WD Proxy] Proxying [GET /element/bc6ecaad-cad2-4fae-bfda-351255e2b1da/attribute/displayed] to [GET http://127.0.0.1:8203/wd/hub/session/45ed9d1f-e01d-4f81-944a-30b1bc4fccf9/element/bc6ecaad-cad2-4fae-bfda-351255e2b1da/attribute/displayed] with no body
+2021-06-12 17:52:43:619 [WD Proxy] Got response with status 200: {"sessionId":"45ed9d1f-e01d-4f81-944a-30b1bc4fccf9","value":"true"}
+2021-06-12 17:52:43:620 [W3C (5579dbbb)] Responding to client with driver.elementDisplayed() result: true
+2021-06-12 17:52:43:621 [HTTP] <-- GET /wd/hub/session/5579dbbb-150b-4532-8f02-10fcf69a9fd4/element/bc6ecaad-cad2-4fae-bfda-351255e2b1da/displayed 200 54 ms - 14
+2021-06-12 17:52:43:621 [HTTP] 
+2021-06-12 17:53:43:629 [BaseDriver] Shutting down because we waited 60 seconds for a command
+2021-06-12 17:53:43:630 [Appium] Closing session, cause was 'New Command Timeout of 60 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+2021-06-12 17:53:43:630 [Appium] Removing session '5579dbbb-150b-4532-8f02-10fcf69a9fd4' from our master session list
+2021-06-12 17:53:43:630 [UiAutomator2] Deleting UiAutomator2 session
+2021-06-12 17:53:43:637 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:769:11)
+    at Socket._write (node:net:781:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at Socket.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:406:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+2021-06-12 17:53:43:642 [UiAutomator2] Deleting UiAutomator2 server session
+2021-06-12 17:53:43:645 [WD Proxy] Matched '/' to command name 'deleteSession'
+2021-06-12 17:53:43:646 [WD Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8203/wd/hub/session/45ed9d1f-e01d-4f81-944a-30b1bc4fccf9] with no body

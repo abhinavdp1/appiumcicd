@@ -1,0 +1,67 @@
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:29.281 BaseTest:168 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:42.704 LoginTests:50 - loginTest before method
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:43.715 LoginTests:52 - 
+****** starting test: invalidPassword******
+
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:46.447 LoginTests:50 - loginTest before method
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:46.490 LoginTests:52 - 
+****** starting test: invalidPassword******
+
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:46.708 LoginPage:27 - Login with standard_user
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:47.610 LoginPage:27 - Login with standard_user
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:49.248 LoginPage:34 - password is invalidpassword
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:50.688 LoginPage:40 - Press login button
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:51.016 LoginPage:34 - password is invalidpassword
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:53.177 LoginPage:40 - Press login button
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:54.163 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:54.164 LoginTests:78 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:54.170 LoginTests:56 - loginTest after method
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:58.195 LoginTests:50 - loginTest before method
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:14:58.197 LoginTests:52 - 
+****** starting test: invalidUserName******
+
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:00.180 LoginPage:27 - Login with invalidusername
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:00.291 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:00.292 LoginTests:78 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:00.294 LoginTests:56 - loginTest after method
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:01.750 LoginTests:50 - loginTest before method
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:01.751 LoginTests:52 - 
+****** starting test: invalidUserName******
+
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:03.085 LoginPage:34 - password is secret_sauce
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:04.503 LoginPage:40 - Press login button
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:05.028 LoginPage:27 - Login with invalidusername
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:05.797 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:05.798 LoginTests:66 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:05.801 LoginTests:56 - loginTest after method
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:07.578 LoginTests:50 - loginTest before method
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:07.582 LoginTests:52 - 
+****** starting test: successfulLogin******
+
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:07.835 LoginPage:27 - Login with standard_user
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:10.103 LoginPage:34 - password is secret_sauce
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:10.624 LoginPage:34 - password is secret_sauce
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:11.933 LoginPage:40 - Press login button
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:12.092 LoginPage:40 - Press login button
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:16.751 ProductsPage:25 - product page title is: PRODUCTS
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:16.751 LoginTests:90 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:16.753 LoginTests:56 - loginTest after method
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:18.595 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:18.597 LoginTests:66 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:18.599 LoginTests:56 - loginTest after method
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:20.574 LoginTests:50 - loginTest before method
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:20.576 LoginTests:52 - 
+****** starting test: successfulLogin******
+
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:23.823 LoginPage:27 - Login with standard_user
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:29.394 LoginPage:34 - password is secret_sauce
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:30.846 LoginPage:40 - Press login button
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:42.710 ProductsPage:25 - product page title is: PRODUCTS
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:42.711 LoginTests:90 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[${ctx:ROUTINGKEY} INFO ] 2021-06-10 21:15:42.712 LoginTests:56 - loginTest after method

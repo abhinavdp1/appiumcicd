@@ -1,0 +1,1454 @@
+[logs/Android_OnePlus INFO ] 2021-06-12 08:17:01.048 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 08:17:01.074 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 08:17:13.637 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 08:17:13.846 LoginTests:52 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 08:17:25.536 TestListener:29 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.AccessibilityId: test-Username}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:266)
+	at com.qa.BaseTest.clear(BaseTest.java:303)
+	at com.qa.pages.LoginPage.enterUserName(LoginPage.java:26)
+	at com.qa.tests.LoginTests.invalidPassword(LoginTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.AccessibilityId: test-Username})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@298cdaa6 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 34 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.AccessibilityId: test-Username})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATCs-MacBook-Air.local', ip: '2406:b400:d1:913d:a08f:4cc2:5b43:3d58%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_292'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 36 more
+
+[logs/Android_OnePlus INFO ] 2021-06-12 08:17:28.514 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 08:17:30.556 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 08:17:30.558 LoginTests:52 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 08:17:41.027 TestListener:29 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.AccessibilityId: test-Username}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:266)
+	at com.qa.BaseTest.clear(BaseTest.java:303)
+	at com.qa.pages.LoginPage.enterUserName(LoginPage.java:26)
+	at com.qa.tests.LoginTests.invalidUserName(LoginTests.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.AccessibilityId: test-Username})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@25982202 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 34 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.AccessibilityId: test-Username})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATCs-MacBook-Air.local', ip: '2406:b400:d1:913d:a08f:4cc2:5b43:3d58%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_292'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 36 more
+
+[logs/Android_OnePlus INFO ] 2021-06-12 08:17:43.546 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 08:17:45.384 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 08:17:45.387 LoginTests:52 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 08:17:58.192 TestListener:29 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.AccessibilityId: test-Username}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:266)
+	at com.qa.BaseTest.clear(BaseTest.java:303)
+	at com.qa.pages.LoginPage.enterUserName(LoginPage.java:26)
+	at com.qa.tests.LoginTests.successfulLogin(LoginTests.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.AccessibilityId: test-Username})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@22e7647d (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 34 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.AccessibilityId: test-Username})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATCs-MacBook-Air.local', ip: '2406:b400:d1:913d:a08f:4cc2:5b43:3d58%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_292'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 36 more
+
+[logs/Android_OnePlus INFO ] 2021-06-12 08:18:01.369 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:21.925 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:21.946 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:32.973 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:33.166 LoginTests:52 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:33.863 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:35.982 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:36.718 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:38.933 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:38.934 LoginTests:78 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:38.950 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:40.642 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:40.645 LoginTests:52 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:40.862 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:43.872 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:45.154 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:46.679 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:46.679 LoginTests:66 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:46.682 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:48.374 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:48.378 LoginTests:52 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:48.549 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:51.087 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:52.727 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:56.082 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:56.083 LoginTests:90 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 08:21:56.086 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:26.819 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:26.861 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:38.573 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:38.840 LoginTests:52 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:40.105 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:41.957 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:44.059 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:46.052 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:46.053 LoginTests:78 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:46.070 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:47.766 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:47.769 LoginTests:52 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:47.977 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:50.869 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:52.043 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:53.699 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:53.700 LoginTests:66 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:53.704 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:55.286 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:55.287 LoginTests:52 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:55.953 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:58.062 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 10:16:59.308 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 10:17:02.226 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 10:17:02.227 LoginTests:90 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 10:17:02.228 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 10:26:53.520 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 10:26:53.534 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:04.307 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:04.518 LoginTests:52 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:05.191 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:07.115 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:08.452 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:10.023 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:10.023 LoginTests:78 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:10.036 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:11.784 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:11.786 LoginTests:52 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:11.993 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:13.531 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:14.775 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:15.798 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:15.800 LoginTests:66 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:15.802 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:17.496 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:17.499 LoginTests:52 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:17.708 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:19.738 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:20.978 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:23.411 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:23.411 LoginTests:90 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 10:27:23.412 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:17:51.792 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 11:17:51.808 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:02.711 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:02.957 LoginTests:52 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:03.598 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:04.972 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:06.205 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:07.908 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:07.909 LoginTests:78 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:07.924 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:09.569 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:09.572 LoginTests:52 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:09.783 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:11.256 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:12.465 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:13.515 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:13.516 LoginTests:66 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:13.520 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:15.144 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:15.145 LoginTests:52 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:15.378 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:17.395 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:18.147 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:20.909 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:20.911 LoginTests:90 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 11:18:20.915 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:03.111 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:03.125 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:14.175 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:14.385 LoginTests:52 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:15.082 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:17.385 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:18.128 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:19.909 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:19.910 LoginTests:78 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:19.918 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:21.604 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:21.606 LoginTests:52 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:21.775 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:23.588 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:24.833 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:25.906 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:25.907 LoginTests:66 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:25.909 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:27.603 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:27.604 LoginTests:52 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:27.813 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:30.095 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:30.885 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:33.277 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:33.279 LoginTests:90 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 11:34:33.280 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:17.384 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:17.406 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:29.093 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:29.319 LoginTests:52 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:29.966 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:31.882 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:32.644 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:34.703 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:34.704 LoginTests:78 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:34.714 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:36.418 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:36.420 LoginTests:52 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:36.603 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:38.667 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:39.382 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:40.935 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:40.935 LoginTests:66 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:40.938 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:42.758 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:42.762 LoginTests:52 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:42.973 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:45.036 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:46.740 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:49.218 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:49.219 LoginTests:90 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 11:38:49.220 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:41:39.589 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 11:41:39.603 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 11:41:51.118 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:41:51.343 LoginTests:52 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 11:41:51.974 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 11:41:54.336 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 11:41:55.132 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 11:41:56.672 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:41:56.673 LoginTests:78 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:41:56.686 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:41:58.424 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:41:58.425 LoginTests:52 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 11:41:58.982 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 11:42:01.017 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 11:42:02.254 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 11:42:03.621 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:42:03.622 LoginTests:66 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 11:42:03.623 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:42:05.340 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 11:42:05.341 LoginTests:52 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 11:42:05.563 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 11:42:07.238 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 11:42:08.504 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 11:42:11.423 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 11:42:11.425 LoginTests:90 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 11:42:11.427 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 12:08:04.496 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 12:08:04.519 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 12:09:18.683 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 12:09:18.708 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 12:09:43.110 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 12:09:43.124 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 12:09:55.013 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 12:09:55.300 LoginTests:52 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 12:09:55.894 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 12:09:57.763 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 12:09:59.152 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:01.364 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:01.366 LoginTests:78 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:01.380 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:03.196 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:03.197 LoginTests:52 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:03.380 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:05.855 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:07.415 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:08.469 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:08.470 LoginTests:66 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:08.472 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:10.275 LoginTests:50 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:10.277 LoginTests:52 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:10.543 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:13.340 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:14.089 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:16.463 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:16.465 LoginTests:90 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 12:10:16.467 LoginTests:56 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:06:38.085 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 17:06:38.105 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 17:06:50.872 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:06:51.105 LoginTests:54 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:06:52.490 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 17:06:55.313 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 17:06:56.594 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:06:58.307 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:06:58.309 LoginTests:80 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:06:58.321 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:06:59.986 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:06:59.988 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:00.240 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:03.131 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:04.343 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:05.943 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:05.944 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:05.945 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:07.578 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:07.583 LoginTests:54 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:07.820 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:10.004 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:10.761 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:13.524 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:13.525 LoginTests:92 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 17:07:13.527 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:04.586 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:04.608 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:18.383 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:18.894 LoginTests:54 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:19.542 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:21.180 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:23.128 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:25.457 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:25.459 LoginTests:80 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:25.490 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:27.513 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:27.515 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:28.530 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:30.607 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:32.234 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:33.494 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:33.495 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:33.496 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:35.298 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:35.300 LoginTests:54 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:35.633 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:37.483 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:38.524 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:40.941 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:40.942 LoginTests:92 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 17:11:40.944 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:14:51.084 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 17:14:51.100 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:07.891 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:08.791 LoginTests:54 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:10.205 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:11.886 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:13.678 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:16.026 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:16.026 LoginTests:80 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:16.042 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:18.409 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:18.411 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:19.167 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:22.260 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:23.739 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:24.924 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:24.925 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:24.927 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:26.937 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:26.940 LoginTests:54 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:27.272 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:29.778 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:31.009 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:33.900 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:33.902 LoginTests:92 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 17:15:33.904 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:29.103 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:29.119 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:43.367 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:44.330 LoginTests:54 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:44.821 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:46.298 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:47.780 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:50.301 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:50.302 LoginTests:80 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:50.319 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:52.279 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:52.284 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:52.506 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:54.526 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:56.141 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:57.393 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:57.394 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:57.395 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:59.286 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:59.287 LoginTests:54 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:21:59.511 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 17:22:01.522 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:22:03.031 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:22:05.555 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 17:22:05.557 LoginTests:92 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 17:22:05.560 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:11.602 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:11.620 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:26.925 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:27.484 LoginTests:54 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:28.195 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:30.865 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:32.506 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:34.273 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:34.274 LoginTests:80 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:34.284 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:36.173 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:36.174 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:36.411 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:39.325 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:40.550 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:42.144 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:42.144 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:42.146 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:43.936 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:43.937 LoginTests:54 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:45.148 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:47.648 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:48.852 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:51.565 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:51.567 LoginTests:92 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 17:30:51.569 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:18.283 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:18.303 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:29.876 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:30.029 LoginTests:54 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:30.773 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:33.208 LoginPage:34 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:33.963 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:35.515 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:35.516 LoginTests:80 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:35.526 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:37.231 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:37.233 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:37.460 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:39.862 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:41.096 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:42.522 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:42.523 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:42.526 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:44.179 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:44.181 LoginTests:54 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:44.411 LoginPage:27 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:46.190 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:47.432 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:50.140 ProductsPage:25 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:50.140 LoginTests:92 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 17:32:50.141 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:40:29.542 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 17:40:29.560 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 17:40:41.381 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:40:41.686 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:40:42.717 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 17:40:45.526 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:40:46.729 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:40:48.709 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:40:48.710 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:40:48.722 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:44:12.099 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 17:44:12.116 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 17:44:24.588 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:44:24.804 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:44:26.070 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 17:44:29.027 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:44:29.755 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:44:31.361 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:44:31.362 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:44:31.380 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:56:21.865 BaseTest:203 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 17:56:21.883 BaseTest:235 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 17:56:33.428 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 17:56:33.668 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 17:56:34.341 LoginPage:27 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 17:56:36.246 LoginPage:34 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 17:56:37.459 LoginPage:40 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 17:56:39.963 LoginPage:53 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:56:39.964 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 17:56:39.974 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:08:19.271 BaseTest:205 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 19:08:19.285 BaseTest:237 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 19:08:30.798 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:08:31.019 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 19:08:32.507 BaseTest:290 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 19:08:34.317 BaseTest:290 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 19:08:36.026 BaseTest:278 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 19:08:37.478 BaseTest:310 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 19:08:37.480 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 19:08:37.487 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:15.101 BaseTest:205 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:15.115 BaseTest:237 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:25.635 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:25.784 LoginTests:54 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:27.631 BaseTest:290 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:29.821 BaseTest:290 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:31.360 BaseTest:278 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:32.903 BaseTest:310 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:32.904 LoginTests:80 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.ffdf
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:32.923 TestListener:30 - java.lang.AssertionError: expected [Username and password do not match any user in this service.ffdf] but found [Username and password do not match any user in this service.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.qa.tests.LoginTests.invalidPassword(LoginTests.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:33.701 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:35.419 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:35.420 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:36.631 BaseTest:290 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:38.864 BaseTest:290 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:40.143 BaseTest:278 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:40.645 BaseTest:310 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:40.646 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:40.648 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:42.271 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:42.273 LoginTests:54 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:43.332 BaseTest:290 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:45.584 BaseTest:290 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:46.829 BaseTest:278 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:48.605 BaseTest:310 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:48.606 LoginTests:92 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 19:09:48.607 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:10.643 BaseTest:205 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:10.657 BaseTest:237 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:25.874 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:26.521 LoginTests:54 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:28.771 BaseTest:290 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:30.738 BaseTest:290 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:32.407 BaseTest:278 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:33.895 BaseTest:310 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:33.896 LoginTests:80 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.ffdf
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:33.916 TestListener:32 - java.lang.AssertionError: expected [Username and password do not match any user in this service.ffdf] but found [Username and password do not match any user in this service.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.qa.tests.LoginTests.invalidPassword(LoginTests.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:34.827 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:36.859 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:36.861 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:38.638 BaseTest:290 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:40.852 BaseTest:290 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:42.118 BaseTest:278 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:42.667 BaseTest:310 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:42.668 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:42.670 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:44.419 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:44.420 LoginTests:54 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:45.334 BaseTest:290 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:46.851 BaseTest:290 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:48.117 BaseTest:278 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:50.238 BaseTest:310 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:50.239 LoginTests:92 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 19:14:50.241 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 21:57:07.531 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 21:57:07.545 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 21:57:18.327 TestListener:32 - java.lang.NullPointerException
+	at com.qa.tests.ProductTestsWithDeepLinks.validateProductOnProductDetailsPage(ProductTestsWithDeepLinks.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus INFO ] 2021-06-12 21:57:21.267 TestListener:32 - java.lang.NullPointerException
+	at com.qa.tests.ProductTestsWithDeepLinks.validateProductOnProductsPage(ProductTestsWithDeepLinks.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:03:37.760 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 22:03:37.777 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 22:04:06.315 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 22:04:06.323 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 22:04:16.069 TestListener:32 - java.lang.NullPointerException
+	at com.qa.tests.ProductTestsWithDeepLinks.validateProductOnProductDetailsPage(ProductTestsWithDeepLinks.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:04:18.160 TestListener:32 - java.lang.NullPointerException
+	at com.qa.tests.ProductTestsWithDeepLinks.validateProductOnProductsPage(ProductTestsWithDeepLinks.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:05:53.795 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 22:05:53.805 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 22:06:04.173 TestListener:32 - java.lang.NullPointerException
+	at com.qa.tests.ProductTestsWithDeepLinks.validateProductOnProductDetailsPage(ProductTestsWithDeepLinks.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:06:06.924 TestListener:32 - java.lang.NullPointerException
+	at com.qa.tests.ProductTestsWithDeepLinks.validateProductOnProductsPage(ProductTestsWithDeepLinks.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:12:17.359 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 22:12:17.375 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 22:12:28.081 TestListener:32 - java.lang.NullPointerException
+	at com.qa.tests.ProductTestsWithDeepLinks.validateProductOnProductDetailsPage(ProductTestsWithDeepLinks.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:12:31.999 BaseTest:313 - title is: Sauce Labs Backpack
+[logs/Android_OnePlus INFO ] 2021-06-12 22:12:33.344 BaseTest:313 - price is -$29.99
+[logs/Android_OnePlus INFO ] 2021-06-12 22:14:49.771 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 22:14:49.784 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 22:15:01.524 BaseTest:281 - navigate back to the products details page
+[logs/Android_OnePlus INFO ] 2021-06-12 22:15:11.999 TestListener:32 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.view.ViewGroup[@content-desc="test-Description"]/android.widget.TextView[1]}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:271)
+	at com.qa.BaseTest.getAttribute(BaseTest.java:299)
+	at com.qa.BaseTest.getText(BaseTest.java:307)
+	at com.qa.pages.ProductDetailsPage.getSLBTitle(ProductDetailsPage.java:22)
+	at com.qa.tests.ProductTestsWithDeepLinks.validateProductOnProductDetailsPage(ProductTestsWithDeepLinks.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.view.ViewGroup[@content-desc="test-Description"]/android.widget.TextView[1]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6a52fd86 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 35 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.view.ViewGroup[@content-desc="test-Description"]/android.widget.TextView[1]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATCs-MacBook-Air.local', ip: '2406:b400:d1:2457:259a:f2f1:4c71:14d6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_292'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 37 more
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:15:16.490 BaseTest:313 - title is: Sauce Labs Backpack
+[logs/Android_OnePlus INFO ] 2021-06-12 22:15:16.980 BaseTest:313 - price is -$29.99
+[logs/Android_OnePlus INFO ] 2021-06-12 22:17:10.172 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 22:17:10.184 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 22:17:26.145 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:00.538 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:00.551 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:18.366 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:19.288 LoginTests:54 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:22.407 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:23.941 BaseTest:293 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:25.485 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:27.270 BaseTest:313 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:27.271 LoginTests:80 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.ffdf
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:27.289 TestListener:32 - java.lang.AssertionError: expected [Username and password do not match any user in this service.ffdf] but found [Username and password do not match any user in this service.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.qa.tests.LoginTests.invalidPassword(LoginTests.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:28.259 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:30.406 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:30.408 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:32.241 BaseTest:293 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:34.454 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:35.697 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:36.235 BaseTest:313 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:36.236 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:36.238 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:38.172 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:38.175 LoginTests:54 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:39.158 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:41.079 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:42.349 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:44.173 BaseTest:313 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:44.174 LoginTests:92 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 22:19:44.176 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:21:37.077 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 22:21:37.098 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 22:21:53.459 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:27:01.736 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 22:27:01.756 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 22:27:21.497 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:42:51.817 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 22:42:51.838 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:09.386 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:10.052 LoginTests:54 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:13.106 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:14.624 BaseTest:293 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:16.085 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:17.115 BaseTest:313 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:17.116 LoginTests:80 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.ffdf
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:17.136 TestListener:32 - java.lang.AssertionError: expected [Username and password do not match any user in this service.ffdf] but found [Username and password do not match any user in this service.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.qa.tests.LoginTests.invalidPassword(LoginTests.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:18.096 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:20.031 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:20.033 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:21.178 BaseTest:293 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:23.472 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:25.149 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:25.711 BaseTest:313 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:25.712 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:25.714 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:27.527 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:27.528 LoginTests:54 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:28.920 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:31.150 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:32.428 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:34.544 BaseTest:313 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:34.545 LoginTests:92 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:34.547 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:40.138 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:42.054 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:43.221 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:43.415 ProductTests:53 - 
+****** starting test: validateProductOnProductDetailsPage******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:44.732 BaseTest:281 - navigate back to the products details page
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:46.429 BaseTest:313 - title is -Sauce Labs Backpack
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:46.902 BaseTest:313 - txt is -carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:47.064 BaseTest:281 - navigate back to products page
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:47.274 MenuPage:16 - press Settings button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:50.556 BaseTest:281 - press settings button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:56.678 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:43:58.978 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:44:01.238 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:44:01.433 ProductTests:53 - 
+****** starting test: validateProductOnProductsPage******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:44:03.519 BaseTest:313 - title is: Sauce Labs Backpack
+[logs/Android_OnePlus INFO ] 2021-06-12 22:44:04.349 BaseTest:313 - price is -$29.99
+[logs/Android_OnePlus INFO ] 2021-06-12 22:44:04.351 MenuPage:16 - press Settings button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:44:06.556 BaseTest:281 - press settings button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:27.809 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:27.832 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:43.997 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:44.386 LoginTests:54 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:47.260 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:49.241 BaseTest:293 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:50.758 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:52.479 BaseTest:313 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:52.480 LoginTests:80 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:52.488 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:54.462 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:54.463 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:55.360 BaseTest:293 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:58.102 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:59.382 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:59.954 BaseTest:313 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:59.955 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:46:59.957 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:01.832 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:01.834 LoginTests:54 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:04.105 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:06.029 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:07.299 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:09.115 BaseTest:313 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:09.116 LoginTests:92 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:09.118 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:14.975 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:17.440 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:18.627 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:18.815 ProductTests:53 - 
+****** starting test: validateProductOnProductDetailsPage******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:20.585 BaseTest:281 - navigate back to the products details page
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:22.358 BaseTest:313 - title is -Sauce Labs Backpack
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:22.761 BaseTest:313 - txt is -carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:22.909 BaseTest:281 - navigate back to products page
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:23.557 MenuPage:16 - press Settings button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:26.543 BaseTest:281 - press settings button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:34.784 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:36.807 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:38.567 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:38.712 ProductTests:53 - 
+****** starting test: validateProductOnProductsPage******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:40.424 BaseTest:313 - title is: Sauce Labs Backpack
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:40.948 BaseTest:313 - price is -$29.99
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:40.951 MenuPage:16 - press Settings button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:47:43.605 BaseTest:281 - press settings button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:52:47.953 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 22:52:47.974 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:04.424 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:05.096 LoginTests:54 - 
+****** starting test: invalidPassword******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:08.307 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:10.793 BaseTest:293 - password is invalidpassword
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:11.524 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:12.587 BaseTest:313 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:12.588 LoginTests:80 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:12.597 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:14.255 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:14.258 LoginTests:54 - 
+****** starting test: invalidUserName******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:15.140 BaseTest:293 - Login with invalidusername
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:17.494 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:18.748 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:19.136 BaseTest:313 - error text is - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:19.137 LoginTests:68 - actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:19.138 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:20.837 LoginTests:52 - loginTest before method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:20.838 LoginTests:54 - 
+****** starting test: successfulLogin******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:22.100 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:23.991 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:24.741 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:26.522 BaseTest:313 - product page title is: PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:26.522 LoginTests:92 - actual product title - PRODUCTS
+expected product title - PRODUCTS
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:26.525 LoginTests:58 - loginTest after method
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:31.264 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:33.109 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:34.913 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:35.104 ProductTests:53 - 
+****** starting test: validateProductOnProductDetailsPage******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:36.484 BaseTest:281 - navigate back to the products details page
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:38.140 BaseTest:313 - title is -Sauce Labs Backpack
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:38.439 BaseTest:313 - txt is -carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:38.596 BaseTest:281 - navigate back to products page
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:38.795 MenuPage:16 - press Settings button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:42.707 BaseTest:281 - press settings button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:47.609 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:49.006 BaseTest:293 - password is secret_sauce
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:50.552 BaseTest:281 - Press login button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:50.715 ProductTests:53 - 
+****** starting test: validateProductOnProductsPage******
+
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:52.365 BaseTest:313 - title is: Sauce Labs Backpack
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:53.279 BaseTest:313 - price is -$29.99
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:53.281 MenuPage:16 - press Settings button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:53:56.065 BaseTest:281 - press settings button
+[logs/Android_OnePlus INFO ] 2021-06-12 22:55:33.408 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 22:55:33.424 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 22:55:46.281 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 23:04:01.825 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 23:04:01.843 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 23:04:44.926 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 23:04:44.942 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 23:04:56.278 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 23:09:23.479 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 23:09:23.498 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 23:09:36.240 BaseTest:293 - Login with standard_user
+[logs/Android_OnePlus INFO ] 2021-06-12 23:22:29.854 BaseTest:208 - log path: logs/Android_OnePlus
+[logs/Android_OnePlus INFO ] 2021-06-12 23:22:29.895 BaseTest:240 - /Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[logs/Android_OnePlus INFO ] 2021-06-12 23:22:43.625 BaseTest:293 - Login with standard_user

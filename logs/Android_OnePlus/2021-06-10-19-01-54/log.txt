@@ -1,0 +1,34 @@
+11:Android:OnePlus:com.qa.BaseTest:/Users/abhinav/eclipse-workspace/TDDFramework/target/test-classes/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+11:Android:OnePlus:com.qa.tests.LoginTests:loginTest before method
+11:Android:OnePlus:com.qa.tests.LoginTests:
+****** starting test: invalidPassword******
+
+11:Android:OnePlus:com.qa.pages.LoginPage:Login with standard_user
+11:Android:OnePlus:com.qa.pages.LoginPage:password is invalidpassword
+11:Android:OnePlus:com.qa.pages.LoginPage:Press login button
+11:Android:OnePlus:com.qa.pages.LoginPage:error text is - Username and password do not match any user in this service.
+11:Android:OnePlus:com.qa.tests.LoginTests:actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+11:Android:OnePlus:com.qa.tests.LoginTests:loginTest after method
+11:Android:OnePlus:com.qa.tests.LoginTests:loginTest before method
+11:Android:OnePlus:com.qa.tests.LoginTests:
+****** starting test: invalidUserName******
+
+11:Android:OnePlus:com.qa.pages.LoginPage:Login with invalidusername
+11:Android:OnePlus:com.qa.pages.LoginPage:password is secret_sauce
+11:Android:OnePlus:com.qa.pages.LoginPage:Press login button
+11:Android:OnePlus:com.qa.pages.LoginPage:error text is - Username and password do not match any user in this service.
+11:Android:OnePlus:com.qa.tests.LoginTests:actual error text - Username and password do not match any user in this service.
+expected error text - Username and password do not match any user in this service.
+11:Android:OnePlus:com.qa.tests.LoginTests:loginTest after method
+11:Android:OnePlus:com.qa.tests.LoginTests:loginTest before method
+11:Android:OnePlus:com.qa.tests.LoginTests:
+****** starting test: successfulLogin******
+
+11:Android:OnePlus:com.qa.pages.LoginPage:Login with standard_user
+11:Android:OnePlus:com.qa.pages.LoginPage:password is secret_sauce
+11:Android:OnePlus:com.qa.pages.LoginPage:Press login button
+11:Android:OnePlus:com.qa.pages.ProductsPage:product page title is: PRODUCTS
+11:Android:OnePlus:com.qa.tests.LoginTests:actual product title - PRODUCTS
+expected product title - PRODUCTS
+11:Android:OnePlus:com.qa.tests.LoginTests:loginTest after method

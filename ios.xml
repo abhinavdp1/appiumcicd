@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="Suite">
+ <!-- Test -->
+  <test name="iOS">
+    <listeners>
+      <listener class-name="com.qa.listeners.TestListener"/>
+    </listeners>
+    <parameter name="emulator" value="true"/>
+    <parameter name="platformName" value="iOS"/>
+    <parameter name="udid" value ="F4536D2C-5317-49A9-8313-8F69C3F1C15A"/>
+    <parameter name="deviceName" value="iPhone 8"/>
+    <parameter name="wdaLocalPort" value="10001"/>
+    <parameter name="webkitDebugProxyPort" value="11001"/>
+    <classes>
+    <class name="com.qa.tests.LoginTests"/>
+    <class name="com.qa.tests.ProductTests"/>
+    </classes>
+  </test>-->
+</suite> <!-- Suite -->
